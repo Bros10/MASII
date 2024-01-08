@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+</head>
+<body>
+    <h1>Email Page</h1>
+    <form action="{{ url_for('submit_email') }}" method="post">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <input type="text" name="message" id="message" required>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

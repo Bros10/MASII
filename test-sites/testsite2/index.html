@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add event handlers for buttons
+            $("#button1").click(function(){
+                $("#output").text("Button 1 clicked!");
+            });
+            $("#button2").click(function(){
+                $("#output").text("Button 2 clicked!");
+            });
+
+            // Add event handler for form submission
+            $("form").submit(function(event){
+                event.preventDefault(); // prevent the form from submitting
+                var input = $("#input").val();
+                $("#output").text("Form submitted with input: " + input);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>One-Page Application</h1>
+
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <br><br>
+
+    <form>
+        <label for="input">Input:</label>
+        <input type="text" id="input">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <div id="output"></div>
+</body>
+</html>

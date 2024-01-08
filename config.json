@@ -1,0 +1,16 @@
+{
+    "inscope_ips": [
+        "192.168.1.1",
+        "10.0.0.1"
+    ],
+    "inscope_urls": [
+        "https://example.com/login",
+        "https://example.com/settings",
+        "https://example.com/profile"
+    ],
+    "authentication": {
+        "Cookie": "user_1=cred_1",
+        "Authentication Bearer": "abawdoawidoakwd.sk"
+    },
+    "max_requests_per_second": 10
+}

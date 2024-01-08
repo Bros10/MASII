@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirect User to out-of scope site</title>
+  </head>
+  <body>
+    <h1>Checks to ensure the tool won't crawl an out-of-scope site.</h1>
+    <p>This page redirects to itself, creating an infinite loop.</p>
+    <script>
+      window.location.href = "https://bros10.github.io/";
+    </script>
+  </body>
+</html>

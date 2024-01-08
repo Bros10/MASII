@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinite Redirect Bug</title>
+  </head>
+  <body>
+    <h1>Infinite Redirect Bug</h1>
+    <p>This page redirects to itself, creating an infinite loop.</p>
+    <script>
+      window.location.href = window.location.href;
+    </script>
+  </body>
+</html>
