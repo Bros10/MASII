@@ -23,3 +23,12 @@ Passing two Cookies, for two seperate user roles. A rate-limit of max 10 request
 ./masii-linux-amd64 -u http://127.0.0.1:5000 -a "Cookie: session=eyJ1c2VyX2lkIjoxfQ.Y9lP9g.stwoa_Vlxa_xqajmvx_gVQBjujw, session=eyJ1c2VyX2lkIjoyfQ.ZAdbrQ.BK5tuLMylUpr1jZY1Ztv8TR2RhE" -s -t Admin,JOE -r 10 -c -m headers
 ```
 
+## Current Functionality 
+
+- Detect Misconfigured Cross-Origin Resource Sharing Policy
+- Detect Missing HTTP Security Headers
+- Crawl any web applications and create a directed graph of the site
+- Create multiple graphs based of user roles
+- Highlight pages containing functionality that could be more likely to be vulnerable
+
+
